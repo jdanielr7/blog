@@ -5,14 +5,10 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view ('/', 'welcome');
-Route::view ('contacto', 'contacto');
-Route::view ('blog', 'blog');
-Route::view ('nosotros', 'about');
-
-
-
-
+Route::view ('/', 'welcome')->name ('home');
+Route::view ('blog', 'blog')->name ('blog');
+Route::view ('nosotros', 'about')->name ('about');
+Route::view ('contacto', 'contact')->name ('contact');
 
 
 Route::get('/dashboard', function () {
