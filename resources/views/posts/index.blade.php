@@ -4,7 +4,7 @@
     @foreach ($posts as $post)
     <h2>
         
-        <a href="/blog/{{ $post->id }}"> 
+        <a href="{{ route('posts.show', $post) }}"> 
             {{ $post->title }}
         </a>
 
